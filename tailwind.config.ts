@@ -1,3 +1,4 @@
+import { LuPackage2 } from "react-icons/lu";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,6 +14,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "#161D6F",
+        secondary: "#227B94",
+        tertiary: "#98DED9",
+        brand: "#FFFFFF",
+        textHover: "#FCDE70",
+        page: "#F5F7F8",
+        page2: "#E9EFEC",
+      }
     },
   },
   plugins: [],
