@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    },
+    {
+        "id": 2,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    },
+    {
+        "id": 3,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    },
+    {
+        "id": 4,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    },
+    {
+        "id": 5,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    },
+    {
+        "id": 6,
+        "Name": "Freeport",
+        "content": "lorem ipsum dolor sit amet",
+        "image": "/Images/UI/brandUI1.jpg",
+        "alt": "image"
+    }
+]

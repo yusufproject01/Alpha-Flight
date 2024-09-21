@@ -4,6 +4,8 @@ import { Navbar } from "@/Components/Navigation/Navbar";
 import { Footer } from "@/Components/Layouts/Footer";
 import { Providers } from "./provider";
 import { merriweather } from "@/public/fonts/layoutFont";
+import "leaflet/dist/leaflet.css";
+
 
 
 export const metadata: Metadata = {

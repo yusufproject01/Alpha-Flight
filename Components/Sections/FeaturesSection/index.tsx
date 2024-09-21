@@ -7,7 +7,7 @@ import { MdOutlineLoyalty, MdOutlinePlace } from "react-icons/md"
 
 export const FeaturesSection = () => {
     return (
-        <section className="w-full sm:h-36 h-20 absolute sm:-bottom-20 -bottom-10 flex justify-center">
+        <section className="w-full sm:h-36 h-20 absolute sm:-top-44 -top-20 flex justify-center">
             <div
                 className="sm:max-w-4xl max-w-sm w-full h-full 
                             flex justify-around items-center bg-white shadow-md rounded-md">

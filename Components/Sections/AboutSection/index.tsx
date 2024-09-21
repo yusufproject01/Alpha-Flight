@@ -1,10 +1,11 @@
 import { ButtonAboutContact } from "@/Components/Ui/Buttons/ButtonAbout"
 import { AboutProps } from "@/types/interfaceAbout"
 import Image from "next/image"
+import { FeaturesSection } from "../FeaturesSection"
 
 export const AboutSection = ({ image, imageAbsolute, alt, altAbsolute, title, text }: AboutProps) => {
     return (
-        <main id="about" className="w-full max-h-[500px] h-full flex items-center sm:mb-10 mt-16 sm:mt-0">
+        <main id="about" className="w-full max-h-[500px] h-full flex items-center sm:pb-40 pb-6 sm:pt-8 pt-10 relative">
             <section className="w-full flex flex-col sm:flex-row sm:justify-between items-center sm:gap-0 gap-4 sm:px-20 px-8">
                 <div className="sm:w-1\2 flex sm:relative gap-4 sm:gap-0 h-full">
                     <Image
@@ -30,6 +31,7 @@ export const AboutSection = ({ image, imageAbsolute, alt, altAbsolute, title, te
                     <ButtonAboutContact btnText="About More"/>
                 </div>
             </section>
+            <FeaturesSection />
         </main>
     )
 }

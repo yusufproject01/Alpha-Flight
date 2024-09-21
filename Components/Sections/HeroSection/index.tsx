@@ -5,15 +5,16 @@ import { HeroProps } from "@/types/interfaceHero"
 import { fontBrand } from "@/public/fonts/heroFont"
 
 
-export const HeroSection = ({brand, text, image}: HeroProps) => {
+export const HeroSection = ({ brand, text, image }: HeroProps) => {
     return (
-        <section id="hero" className="w-full sm:max-h-[600px] max-h-[500px] h-full z-0 relative sm:mb-28 mb-12">
+        <section id="hero" className="w-full sm:max-h-[600px] max-h-[500px] h-full z-0 relative sm:mb-28 mb-12 overflow-hidden">
             <Image
                 src={image}
                 alt="hero"
                 width={900}
                 height={900}
-                className="sm:object-cover object-fill h-full w-full brightness-50 " />
+                className="sm:object-cover object-fill sm:max-h-[600px] h-full w-full brightness-50 "
+            />
             <div
                 className="absolute top-1/2 left-1/2 transform
                 sm:max-w-5xl max-w-xs w-full flex flex-col gap-3
@@ -26,11 +27,10 @@ export const HeroSection = ({brand, text, image}: HeroProps) => {
                     {text}
                 </p>
                 <div className="w-full flex justify-center mt-4 gap-20">
-                    <ButtonHeroContact btnText="Contact Us"/>
-                    <ButtonHeroMore btnText="Learn More"/>
+                    <ButtonHeroContact btnText="Contact Us" />
+                    <ButtonHeroMore btnText="Learn More" />
                 </div>
             </div>
-            <FeaturesSection />
         </section>
     )
 }

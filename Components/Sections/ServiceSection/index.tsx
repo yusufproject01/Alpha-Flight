@@ -1,7 +1,7 @@
 'use client';
 
 import { ButtonService } from '@/Components/Ui/Buttons/ButtonService';
-import { tabContent } from '@/data/tabs/tabContent';
+import { tabContent } from '@/data/tsContent/tabContent';
 import { ServicesProps } from '@/types/interfaceService';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -13,12 +13,12 @@ export const ServiceSection = ({img, alt}: ServicesProps) => {
     // Data konten untuk setiap tab dengan judul
 
     return (
-        <main id="service" className="w-full max-h-[400px] h-full bg-page2 flex sm:flex-row flex-col items-center">
+        <main id="service" className="w-full max-h-[500px] sm:h-full h-96 bg-page2 flex sm:flex-row flex-col items-center pb-16">
             <section className="sm:w-1/2 w-full h-full flex flex-col items-center pt-8 px-8 gap-4">
                 <h1 className="sm:text-3xl text-xl font-bold">Our Service</h1>
 
                 {/* Pagination */}
-                <div className="w-full h-80 flex flex-col gap-8">
+                <div className="w-full sm:h-80 h-56 flex flex-col mb-4 gap-8">
                     {/* Tab Buttons */}
                     <div className="flex justify-center w-full gap-4">
                         {tabContent.map((_, index) => (
@@ -34,24 +34,24 @@ export const ServiceSection = ({img, alt}: ServicesProps) => {
                     </div>
 
                     {/* Active Tab Content */}
-                    <div className="px-2">
+                    <div className="px-2 sm:h-60 h-52">
                         <h2 className="sm:text-xl text-lg font-semibold mb-2">{tabContent[activeTab].title}</h2>
                         <p className="text-justify sm:text-lg text-sm">{tabContent[activeTab].content}</p>
                     </div>
                 </div>
-                <div>
+                <div className='w-full flex justify-center'>
                     <ButtonService btnText="Learn More" />
                 </div>
                 {/* Pagination */}
             </section>
 
-            <section className="w-1/2 h-full sm:flex hidden flex-col items-center pt-8 relative">
+            <section className="sm:w-1/2 w-full h-full relative">
                 <Image
                     src={img}
                     alt={alt}
                     width={500}
                     height={500}
-                    className="w-80 h-80 absolute -top-12 right-10"
+                    className="w-96 h-96 object-cover hidden sm:block absolute sm:-top-80 sm:right-24"
                 />
             </section>
         </main>
