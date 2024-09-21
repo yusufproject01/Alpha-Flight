@@ -77,7 +77,7 @@ export const Navbar = () => {
                 sm:flex xl:flex-row items-center xl:justify-between gap-6
                 ${isOpen ? 'flex flex-col bg-secondary h-64 w-80 mx-auto rounded-md top-14 right-0 left-0 pt-4 absolute transition-all duration-500 ease-in-out' : 'hidden'}`}>
                     <Link
-                        href="#home"
+                        href="/"
                         className="hover:scale-110 hover:font-semibold hover:text-textHover">
                         <button onClick={() => setIsOpen(false)}>Home</button>
                     </Link>
