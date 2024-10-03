@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
+    output: 'export', // Tambahkan baris ini untuk mengatur output menjadi ekspor statis
 };
 
 export default nextConfig;
